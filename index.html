@@ -13,50 +13,40 @@
 
 <body>
     <button class="btn-restart">Restart</button>
+    <div class="main-carousel"></div>
+    <script id="template-carousel" type="x-tmpl-mustache">
+      
+    </script>
 
-    <div class="carousel">
-        <div class="carousel-cell" id="carousel-cell1"
-            style="background: url('https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260') center/cover">
-            <div class="container">
-                <p>
-                    Picture 1
-                </p>
-            </div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell2"
-            style="background: url('https://images.pexels.com/photos/346271/exposure-long-photography-rotterdam-346271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center/cover">
-            <div class="container">
-                <p>
-                    Picture 2
-                </p>
-            </div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell3"
-            style="background: url('https://images.pexels.com/photos/164459/pexels-photo-164459.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center/cover">
-            <div class="container">
-                <p>
-                    Picture 3
-                </p>
-            </div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell3"
-            style="background: url('https://images.pexels.com/photos/164459/pexels-photo-164459.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center/cover">
-            <div class="container">
-                <p>
-                    Picture 4
-                </p>
-            </div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell3"
-            style="background: url('https://images.pexels.com/photos/166422/pexels-photo-166422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center/cover">
-            <div class="container">
-                <p>
-                    Picture 5
-                </p>
-            </div>
-        </div>
+    <script>
+            var data = [{
+                title: '1 title',
+                description: '<p>1 description</p>',
+                image: 'https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'
+              },
+              {
+                title: '2 title',
+                description: '<p>2 description</p>',
+                image: 'https://images.pexels.com/photos/346271/exposure-long-photography-rotterdam-346271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+              },
+              {
+                title: '3 title',
+                description: '<p>3 description</p>',
+                image: 'https://images.pexels.com/photos/164459/pexels-photo-164459.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+              }
+              {
+                title: '4 title',
+                description: '<p>4 description</p>',
+                image: 'https://images.pexels.com/photos/164459/pexels-photo-164459.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+              }
+              {
+                title: '5 title',
+                description: '<p>5 description</p>',
+                image: 'https://images.pexels.com/photos/166422/pexels-photo-166422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+              }
+            ];
+    </script>
 
-    </div>
     <div class="progress-bar"></div>
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="vendor/hash.js"></script>
