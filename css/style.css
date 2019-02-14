@@ -11,19 +11,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-}
-
-.container p {
-  color: white;
-  font-weight: bold;
-  margin: 0;
-  text-shadow: 3px 3px 3px black;
 }
 
 .carousel {
@@ -34,8 +21,16 @@ body {
   width: 100%;
   height: 50vh;
   min-height: 250px;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px #333;
 }
 
 .btn-restart {

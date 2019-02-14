@@ -14,9 +14,15 @@
 <body>
     <button class="btn-restart">Restart</button>
     <div class="main-carousel"></div>
-    <script id="template-carousel" type="x-tmpl-mustache">
-      
-    </script>
+    <script id="templateCarousel" type="x-tmpl-mustache">
+
+      <div class="carousel-cell" style="background-image: url({{image}})">
+        <div class="container">
+          <h2>{{title}}</h2>
+          {{{description}}}
+        </div>
+      </div>
+</script>
 
     <script>
             var data = [{
@@ -33,12 +39,12 @@
                 title: '3 title',
                 description: '<p>3 description</p>',
                 image: 'https://images.pexels.com/photos/164459/pexels-photo-164459.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
-              }
+              },
               {
                 title: '4 title',
                 description: '<p>4 description</p>',
                 image: 'https://images.pexels.com/photos/164459/pexels-photo-164459.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
-              }
+              },
               {
                 title: '5 title',
                 description: '<p>5 description</p>',
